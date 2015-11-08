@@ -1,12 +1,11 @@
-\name{anRpackage-package}
-\alias{anRpackage-package}
-\alias{anRpackage}
+\name{ibutt}
+\alias{ibutt}
 \docType{package}
 \title{
-\packageTitle{anRpackage}
+\packageTitle{ibutt}
 }
 \description{
-\packageDescription{anRpackage}
+\packageDescription{A package for processing temperature and humidy data acquired from iButtons and Hydrochrons.}
 }
 \details{
 
@@ -18,7 +17,7 @@ The DESCRIPTION file:
 \author{
 \packageAuthor{anRpackage}
 
-Maintainer: \packageMaintainer{anRpackage}
+Maintainer: \packageMaintainer{Daniel Noble}
 }
 \references{
 ~~ Literature or other references for background information ~~
