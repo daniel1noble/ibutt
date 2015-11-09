@@ -4,21 +4,15 @@ Package for processing and organising temperature and humidity data generated fr
 
 # Installation instructions
 
-**ibutt** is not on CRAN and installation will require that you install from the githib repo. To do this will require the use of dev tools
+**ibutt** is not on CRAN and installation will require that you install from the githib repo or an alternative way. I'm currently working on options for this. Although, if you need the functions, just download the zip, set the working directory to ibutt-master and source R/. Below is some code to do this.
 
 ```{r}
-install.packages("devtools")
-library(devtools)
+filelist <- paste0(getwd(),"/R/", list.files(paste0(getwd(),"/R")))
+
+for(i in 1:length(filelist)){
+	source(filelist[i])
+}
 ```
-
-To install the local repository to your R library:
-
-```{r}
-install_github("daniel1noble/ibutt")
-```
-
-The above should install **ibutt** into your R library and make the functions accessible. Improvements on functions and suggestions for additional functions are very much welcome! There are much better ways to do certain things that might speed things up and improve functions. If you have suggestions please contact me or put through a pull request.
-
 Daniel Noble
 daniel.noble@unsw.edu.au
 
