@@ -13,3 +13,11 @@ Imports:
 License: None
 URL: https://github.com/daniel1noble/ibutt
 RoxygenNote: 5.0.0
+Suggests:
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Collate:
+    'process.R'
+    'import.func.R'
+    'ibuttProc.R'
