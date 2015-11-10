@@ -5,14 +5,14 @@ process <- function(dat){
 	tmp <- grep("^[0-9]+/", dat, value = TRUE) ## Extract relevant lines
 
 	    #Do all the processing of the text.
-	    date <- as.Date(gsub("\\s[0-9]+:.*", "",  tmp),"%d/%m/%y") ## Will get the date
+	    date <- gsub("\\s[0-9]+:.*", "",  tmp) ## Will get the date
 	    AMPM <- gsub(".*\\s([A-Z]+).*", "\\1",  tmp) ## Will AM/PM
 	    time <- gsub(".*\\s([0-9]+:[0-9]+:[0-9]+).*", "\\1", tmp) ## Will get the time
 	    timeAMPM <- paste0(time, " ",AMPM)
 	  time24 <- substr(strptime(timeAMPM, format = "%I:%M:%S %p"), 12,19)
 	    unit <- gsub(".*,?([RHC]),.*", "\\1", tmp)
 	temp.hum <- as.numeric(gsub(".*,([0-9]+.*)", "\\1", tmp))
-	date.time <- chron::chron(dates = date, times = time24, format = c('y-m-d', 'h:m:s'))
+	date.time <- chron::chron(dates = date, times = time24, format = c('d/m/y', 'h:m:s'))
 
 	return(data.frame(Date.time = date.time, Date = date, Time = paste0(time ,AMPM), Units = ifelse(unit == "C", unit, paste0("R",unit)), Temperature.Humidity = temp.hum))
 }
