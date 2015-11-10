@@ -8,7 +8,7 @@ process <- function(dat){
 	    date <- as.Date(gsub("\\s[0-9]+:.*", "",  tmp),"%d/%m/%y") ## Will get the date
 	    AMPM <- gsub(".*\\s([A-Z]+).*", "\\1",  tmp) ## Will AM/PM
 	    time <- gsub(".*\\s([0-9]+:[0-9]+:[0-9]+).*", "\\1", tmp) ## Will get the time
-	  time24 <- substr(strptime(time, format "%I:%M:%S %p"))
+	  time24 <- substr(strptime(time, format = "%I:%M:%S %p"))
 	    unit <- gsub(".*,?([RHC]),.*", "\\1", tmp)
 	temp.hum <- as.numeric(gsub(".*,([0-9]+.*)", "\\1", tmp))
 	date.time <- chron::chron(dates = date, times = time24, format = c('y-m-d', 'h:m:s'))

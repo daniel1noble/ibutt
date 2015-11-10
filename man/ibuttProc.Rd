@@ -2,7 +2,7 @@
 % Please edit documentation in R/ibuttProc.R
 \name{ibuttProc}
 \alias{ibuttProc}
-\title{Main function: Process and store ibutton data as lists or amalgamated data frame, which can be easily queried.}
+\title{Main function to process and store ibutton data as lists or amalgamated data frame, which can be easily queried.}
 \usage{
 ibuttProc(dir, list = TRUE)
 }
@@ -15,7 +15,7 @@ ibuttProc(dir, list = TRUE)
 A data.frame or list of temperatures/humidity across the dates and times that data was collected.
 }
 \description{
-Main function: Process and store ibutton data as lists or amalgamated data frame, which can be easily queried.
+Main function to process and store ibutton data as lists or amalgamated data frame, which can be easily queried.
 }
 \examples{
 data <- ibuttProc("data/", list = TRUE)	
