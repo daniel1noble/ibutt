@@ -3,7 +3,7 @@
 
 process <- function(dat){
 	tmp <- grep("^[0-9]+/", dat, value = TRUE) ## Extract relevant lines
-	    
+
 	    #Do all the processing of the text.
 	    date <- as.Date(gsub("\\s[0-9]+:.*", "",  tmp),"%d/%m/%y") ## Will get the date
 	    AMPM <- gsub(".*\\s([A-Z]+).*", "\\1",  tmp) ## Will AM/PM
