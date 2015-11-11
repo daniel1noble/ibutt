@@ -1,14 +1,14 @@
 #' Function for processing the text read from ibuttons.
-#' @param dat A text/csv string imported from a directory containing csv files for ibutton data.
-#' @return Returns a processed data frame with the following
+#' @param dat A text/csv string imported from a directory containing files for ibutton data.
+#' @return Returns a processed data frame with the following:
 #'	\enumerate{
-#'		\item Date A chracter string with the date.
-#'		\item AMPM A chracter string defining 12 hr clock, AM or PM.				
-#'		\item time A character string of the time %H:%M:%S
-#'		\item time24 A chracter string containing the time in 24 hr format.
-#'		\item unit The unit of measurement. 'C' = Celcius; 'RH' = Relative humidity in perecntage
-#'		\item temp.hum The temperature and humidity measurements from the ibutton
-#'		\item date.time A formatted time string (as.numeric) based on time from July 1, 1970.
+#'		\item Date: A chracter string with the date.
+#'		\item AMPM: A chracter string defining 12 hr clock, AM or PM.				
+#'		\item time: A character string of the time %H:%M:%S
+#'		\item time24: A chracter string containing the time in 24 hr format.
+#'		\item unit: The unit of measurement. 'C' = Celcius; 'RH' = Relative humidity in perecntage
+#'		\item temp.hum: The temperature and humidity measurements from the ibutton
+#'		\item date.time: A formatted time string (as.numeric) based on time from July 1, 1970. Date/time can be used for plotting or querying using functions for numeric classes.
 #'}
 
 process <- function(dat){
