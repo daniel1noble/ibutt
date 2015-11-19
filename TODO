@@ -2,3 +2,5 @@
 1) Create easy query of time points and date function
 2) Create plot function
 3) Clean up and streamline process function
+4) Create attributes for the time and date and set this to the numerical version so that it can clean data look and still be allowed to query and plot.
+5) Noticed some issues with ibuttProc when dealing with a single file! Doesn't seme to import. Easy fix and need to do this.
