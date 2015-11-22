@@ -19,7 +19,6 @@ ibuttProc <- function(dir, list = TRUE){
 			}
 		} else {
 		d   <- process(imp)
+			return(d)
 		}
-
- 	return(d)
 }

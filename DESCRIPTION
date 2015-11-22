@@ -5,14 +5,14 @@ Date: 2015-11-08
 Author@R: person("Daniel", "Noble", email = "daniel.noble@unsw.edu.au", role =
     c("aut", "cre"))
 Description: The package allows users to import a series of temperature and
-    humidity data generated from ibutton and hydrochrons. I am just working on this
-    package to make it useful and it's not really in order as of yet! But it will be
-    because I have a crap load of these data files to go through.
+    humidity data generated from ibutton and hydrochrons. I am just working on
+    this package to make it useful and it's not really in order as of yet! But
+    it will be because I have a crap load of these data files to go through.
 Imports:
     plyr
 License: None
 URL: https://github.com/daniel1noble/ibutt
-RoxygenNote: 5.0.0
+RoxygenNote: 5.0.1
 Suggests:
     knitr,
     rmarkdown,

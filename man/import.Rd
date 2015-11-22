@@ -7,7 +7,10 @@
 import(dir)
 }
 \arguments{
-\item{dir}{Directory path to the folder containing the temperature/humidity data. Files should be .csv.}
+\item{dir}{Directory path to the folder containing the temperature/humidity data. Files should be .csv. If more than one file is found it will separate each file as a list, if only one file is found then it will be read singly.}
+}
+\value{
+A character string containing the ibutton or hydrochron data.
 }
 \description{
 Import a list of .csv files generated from iButtons and Hydrochrons. Save these files to a list and name the data.frames the file names
