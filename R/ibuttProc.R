@@ -9,11 +9,17 @@
 
 ibuttProc <- function(dir, list = TRUE){
 	imp <- import(dir)
-	
-	d <- lapply(imp, function(x) process(x))	
-		if(list == TRUE){
-		return(d)
+
+		if(length(list.files(dir, pattern = ".csv")) > 1){
+		d   <- lapply(imp, function(x) process(x))	
+			if(list == TRUE){
+			return(d)
+			} else {
+			plyr::ldply(d)
+			}
 		} else {
-		plyr::ldply(d)
+		d   <- process(imp)
 		}
+
+ 	return(d)
 }
