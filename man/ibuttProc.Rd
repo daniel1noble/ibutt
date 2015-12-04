@@ -4,7 +4,7 @@
 \alias{ibuttProc}
 \title{Main function to process and store ibutton data as lists or amalgamated data frame, which can be easily queried.}
 \usage{
-ibuttProc(dir, list = TRUE)
+ibuttProc(dir, date, time, list = TRUE)
 }
 \arguments{
 \item{dir}{The directory of the ibutton and/or hydrochron files.}
