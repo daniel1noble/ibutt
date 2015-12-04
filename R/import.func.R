@@ -12,6 +12,5 @@ import <- function(dir){
 			dat <- readLines(paste0(dir, list))
 		}
 	return(dat)
-	
 }
 
