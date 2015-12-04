@@ -17,4 +17,10 @@ A data.frame consisting of the sub temperature and humidity values that are subs
 \description{
 Function for sub setting a specific hour or range of times
 }
+\examples{
+#Get a range of temperatures
+time <- subtime("./data/temp.csv", time = c("07:00", "08:00"))
+#Get an hour
+time <- subtime("./data/temp.csv", time = c("11"))
+}
 

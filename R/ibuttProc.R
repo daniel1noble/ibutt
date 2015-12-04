@@ -1,3 +1,5 @@
+## Avoid some unnecessary warning messages.
+Sys.setlocale('LC_ALL','C') 
 
 #' Sub setting a specific date.
 #' @param d The processed iButton data frame.
