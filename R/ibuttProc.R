@@ -18,7 +18,7 @@ subdate <- function(d, date){
 subtime <- function(d, time){
 	if(length(time) >1){
 	#subset range of times
-	dT <- subset(d, format(Date.time, "%H:%m")  >= time[1] & format(Date.time, "%H:%m")  <= time[2])
+	dT <- subset(d, format(Date.time, "%H:%M")  >= time[1] & format(Date.time, "%H:%M")  <= time[2])
 	}else{
 	#subset particular hour
 	dT <- subset(d, format(Date.time, "%H")  == time )
@@ -39,24 +39,23 @@ ibuttProc <- function(dir, date, time, list = TRUE){
 
 		if(length(list.files(dir, pattern = ".csv")) > 1){
 		d   <- lapply(imp, function(x) process(x))
-		
+
 		# Subset date of interest
 		dDate <- lapply(d, function(x) subdate(x, date))
 		# Subset time of interest
 		dfin<- lapply(dDate, function(x) subtime(x, time))
 			if(list == TRUE){
+			return(dfin)
 			} else {
-			plyr::ldply(dfin)
+			return(plyr::ldply(dfin))
 			}
 		} else {
 		d   <- process(imp)
-
 		# Subset time and date of interest
 		dDate <- subdate(d, date)
 		dfin<-subtime(x, time)
+		return(dfin)
 		}
-	
-	return(dfin)
 }
 
 
