@@ -5,7 +5,7 @@ Sys.setlocale('LC_ALL','C')
 #' @param d The processed iButton data frame.
 #' @param date The date, as a character string, one wishes to subset. Note that the format of the date should be "year-month-day" with only a four digit year.
 #' @return A data.frame consisting of the sub temperature and humidity values that are subset by the hour or time range of interest.
-
+#' @export
 subdate <- function(d, date){
 	dD <- subset(d, format(Date.time, "%Y-%m-%d")  == date)
 	return(dD)
@@ -21,7 +21,7 @@ subdate <- function(d, date){
 #' time <- subtime("./data/temp.csv", time = c("07:00", "08:00"))
 #' #Get an hour
 #' time <- subtime("./data/temp.csv", time = c("11"))
-
+#' @export
 
 subtime <- function(d, time){
 	if(length(time) >1){
@@ -41,7 +41,8 @@ subtime <- function(d, time){
 #' @param list A logical argument specifying whether the data frame returned should be kept as a list or amalgamated into a data frame that can be queried using column names.
 #' @return A data.frame or list of temperatures/humidity across the dates and times that data was collected. 
 #' @examples
-#' data <- ibuttProc("data/", date = "2015-11-02", time = c("07:00", "08:00"), list = TRUE)	
+#' data <- ibuttProc("data/", date = "2015-11-02", time = c("07:00", "08:00"), list = TRUE)
+#' @export
 
 ibuttProc <- function(dir, date, time, list = TRUE){
 	imp <- import(dir)

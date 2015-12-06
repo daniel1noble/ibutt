@@ -10,6 +10,7 @@
 #'		\item temp.hum: The temperature and humidity measurements from the ibutton
 #'		\item date.time: A formatted time string (as.numeric) based on time from July 1, 1970. Date/time can be used for plotting or querying using functions for numeric classes.
 #'}
+#' @export
 
 process <- function(dat){
 	tmp <- grep("^[0-9]+/", dat, value = TRUE) ## Extract relevant lines
