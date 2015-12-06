@@ -13,6 +13,9 @@
 #' @export
 
 process <- function(dat){
+	oldw <- getOption("warn")
+	options(warn = -1)
+
 	tmp <- grep("^[0-9]+/", dat, value = TRUE) ## Extract relevant lines
 
 	    #Do all the processing of the text.
@@ -24,7 +27,8 @@ process <- function(dat){
 	            unit <- gsub(".*,?([RHC]),.*", "\\1", tmp)
 	   temp.hum <- as.numeric(gsub(".*,([0-9]+.*)", "\\1", tmp))
    	    date.time <- as.POSIXct(paste(date, time24, " "), format = "%d/%m/%y %H:%M:%S")
-
+           options(warn = oldw)
+           
 	return(data.frame(Date.time = date.time, Units = ifelse(unit == "C", unit, paste0("R",unit)), Temp.Hum = temp.hum))
 }
 
