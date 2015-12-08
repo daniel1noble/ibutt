@@ -1,4 +1,6 @@
 
+Create make/remake files and get that organized for generating documentation. Use render in rmarkdown package to create the pdf
+
 Write tests
 
 Integrate warnings  into functions
