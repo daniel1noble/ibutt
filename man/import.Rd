@@ -15,4 +15,7 @@ A character string containing the ibutton or hydrochron data.
 \description{
 Import a list of .csv files generated from iButtons and Hydrochrons. Save these files to a list and name the data.frames the file names
 }
+\author{
+Daniel Noble - daniel.noble@unsw.edu.au
+}
 

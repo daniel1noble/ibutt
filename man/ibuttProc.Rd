@@ -22,6 +22,10 @@ A data.frame or list of temperatures/humidity across the dates and times that da
 Import and subset iButton files and data.
 }
 \examples{
-data <- ibuttProc("data/", date = "2015-11-02", time = c("07:00", "08:00"), list = TRUE)
+dir <- paste0(system.file("data",  package="ibutt"), "/")
+data <- ibuttProc(dir, date = "2015-11-06", time = c("10:00", "11:00"), list = TRUE)
+}
+\author{
+Daniel Noble - daniel.noble@unsw.edu.au
 }
 

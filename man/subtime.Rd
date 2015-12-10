@@ -23,4 +23,7 @@ time <- subtime("./data/temp.csv", time = c("07:00", "08:00"))
 #Get an hour
 time <- subtime("./data/temp.csv", time = c("11"))
 }
+\author{
+Daniel Noble - daniel.noble@unsw.edu.au
+}
 

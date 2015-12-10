@@ -17,4 +17,7 @@ A data.frame consisting of the sub temperature and humidity values that are subs
 \description{
 Sub setting a specific date.
 }
+\author{
+Daniel Noble - daniel.noble@unsw.edu.au
+}
 

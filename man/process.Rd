@@ -24,4 +24,7 @@ Returns a processed data frame with the following:
 \description{
 Function for processing the text read from ibuttons.
 }
+\author{
+Daniel Noble - daniel.noble@unsw.edu.au
+}
 
