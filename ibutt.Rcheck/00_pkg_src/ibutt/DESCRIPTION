@@ -8,21 +8,15 @@ Description: The package allows users to import a series of temperature and
     humidity data generated from ibutton and hydrochrons. I am just working on
     this package to make it useful and it's not really in order as of yet! But
     it will be because I have a crap load of these data files to go through.
-Depends:
-    R (>= 3.2.3)
+Depends: R (>= 3.2.3)
 LazyData: true
-Imports:
-    plyr
+Imports: plyr
 License: GPL-2
-Suggests:
-    knitr,
-    rmarkdown,
-    chron,
-    testthat
+Suggests: knitr, rmarkdown, chron, testthat
 VignetteBuilder: knitr
-Collate:
-    'data.R'
-    'process.R'
-    'import.func.R'
-    'ibuttProc.R'
+Collate: 'data.R' 'process.R' 'import.func.R' 'ibuttProc.R'
 RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-03 10:19:53 UTC; danielnoble
+Author: Daniel Noble [aut, cre]
+Maintainer: Daniel Noble <daniel.noble@unsw.edu.au>

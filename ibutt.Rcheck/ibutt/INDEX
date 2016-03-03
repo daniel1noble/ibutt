@@ -1,0 +1,13 @@
+humidity                Humidity data Example humidity data taken from
+                        a hydrochron iButton
+ibuttProc               Import and subset iButton files and data.
+import                  Import a list of .csv files generated from
+                        iButtons and Hydrochrons. Save these files to a
+                        list and name the data.frames the file names
+process                 Function for processing the text read from
+                        ibuttons.
+subdate                 Sub setting a specific date.
+subtime                 Function for sub setting a specific hour or
+                        range of times
+temp                    Temperature data Example temperature data taken
+                        from an iButton
