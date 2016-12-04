@@ -1,6 +1,7 @@
 # ibutt
 
-[![Build Status](https://travis-ci.org/daniel1noble/ibutt.png?branch =master)](https://travis-ci.org/daniel1noble/ibutt)
+[![Build Status](https://travis-ci.org/daniel1noble/ibutt.png?branch =master)](https://travis-ci.org/daniel1noble/ibutt) [![codecov](https://codecov.io/gh/daniel1noble/ibutt/branch/master/graph/badge.svg)](https://codecov.io/gh/daniel1noble/ibutt)
+
 
 Package for processing and organising temperature and humidity data generated from iButtons and Hyrdochrons. 
 
